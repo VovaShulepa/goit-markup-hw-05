@@ -302,6 +302,7 @@ btn:focus {
 
 .icon-modal-close:hover {
    cursor: pointer;
+   fill: #ffa805;
 }
 
 

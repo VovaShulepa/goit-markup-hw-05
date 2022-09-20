@@ -162,6 +162,8 @@ img {
    line-height: 1.14;
    letter-spacing: 0.02em;
    font-weight: 500;
+   transition: color var(--transition-time) var(--cubic-bezier),
+      color var(--transition-time) var(--cubic-bezier);
 }
 
 .contact {
@@ -232,14 +234,14 @@ img {
    border-radius: 4px;
    letter-spacing: 0.06em;
    line-height: 30px;
+   transition: background-color var(--transition-time) var(--cubic-bezier),
+      color var(--transition-time) var(--cubic-bezier);
 }
 
 .btn:hover,
-btn:focus {
+.btn:focus {
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    background-color: #1270bd;
-   transition: background-color var(--transition-time) var(--cubic-bezier),
-      color var(--transition-time) var(--cubic-bezier);
 }
 
 /* =====================MODAL========================== */
@@ -255,6 +257,7 @@ btn:focus {
       opacity var(--transition-time) var(--cubic-bezier),
       visibility var(--transition-time) var(--cubic-bezier);
    opacity: 1;
+   z-index: 1;
 }
 
 .backdrop.is-hidden {
@@ -298,11 +301,13 @@ btn:focus {
 
 .icon-modal-close {
    fill: var(--black-color);
+   transition:
+      fill var(--transition-time) var(--cubic-bezier);
 }
 
 .icon-modal-close:hover {
    cursor: pointer;
-   fill: #ffa805;
+   fill: var(--blue-color);
 }
 
 
@@ -458,6 +463,8 @@ btn:focus {
    width: 100%;
    height: 100%;
    color: var(--social-color);
+   transition: background-color var(--transition-time) var(--cubic-bezier),
+      color var(--transition-time) var(--cubic-bezier);
 }
 
 .team-socials-item:not(:last-child),
@@ -470,8 +477,6 @@ btn:focus {
    border-radius: 50px;
    background-color: var(--blue-color);
    color: var(--main-backround);
-   transition: background-color var(--transition-time) var(--cubic-bezier),
-      color var(--transition-time) var(--cubic-bezier);
 }
 
 .team-socials-icon {
@@ -488,6 +493,7 @@ btn:focus {
 .clients-item {
    width: 170px;
    height: 92px;
+
 }
 
 .clients-item:not(:last-child) {
@@ -503,6 +509,7 @@ btn:focus {
    color: var(--social-color);
    border: 1px solid var(--social-color);
    border-radius: 4px;
+   transition: color var(--transition-time) var(--cubic-bezier);
 }
 
 .clients-icon {
@@ -513,7 +520,6 @@ btn:focus {
 .clients-link:focus {
    color: var(--blue-color);
    border: 1px solid var(--blue-color);
-   transition: color var(--transition-time) var(--cubic-bezier);
 }
 
 /* ============================================================ */
@@ -535,6 +541,9 @@ btn:focus {
    text-align: center;
    cursor: pointer;
    letter-spacing: 0.03em;
+   transition: background-color var(--transition-time) var(--cubic-bezier),
+      color var(--transition-time) var(--cubic-bezier),
+      box-shadow var(--transition-time) var(--cubic-bezier);
 }
 
 .buttons {
@@ -551,8 +560,6 @@ btn:focus {
    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
       0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
-   transition: background-color var(--transition-time) var(--cubic-bezier),
-      color var(--transition-time) var(--cubic-bezier);
 }
 
 /* =====================Cards================================ */
@@ -594,13 +601,12 @@ btn:focus {
 
 .project-card {
    display: block;
-
+   transition: box-shadow var(--transition-time) var(--cubic-bezier);
 }
 
 .project-card:hover,
 .project-card:focus {
    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-   transition: box-shadow var(--transition-time) var(--cubic-bezier);
 }
 
 .about-subtitle {
@@ -703,6 +709,8 @@ btn:focus {
    color: var(--main-backround);
    border-radius: 50px;
    background-color: var(--footer-socials);
+   transition: background-color var(--transition-time) var(--cubic-bezier),
+      color var(--transition-time) var(--cubic-bezier);
 }
 
 .footer-socials-icon {
@@ -713,8 +721,6 @@ btn:focus {
 .footer-socials-link:focus {
    background-color: var(--blue-color);
    color: var(--main-backround);
-   transition: background-color var(--transition-time) var(--cubic-bezier),
-      color var(--transition-time) var(--cubic-bezier);
 }
 
 .foot-flex {

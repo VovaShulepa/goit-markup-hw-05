@@ -464,7 +464,8 @@ img {
    height: 100%;
    color: var(--social-color);
    transition: background-color var(--transition-time) var(--cubic-bezier),
-      color var(--transition-time) var(--cubic-bezier);
+      color var(--transition-time) var(--cubic-bezier),
+      border-radius var(--transition-time) var(--cubic-bezier);
 }
 
 .team-socials-item:not(:last-child),
@@ -474,7 +475,7 @@ img {
 
 .team-socials-link:hover,
 .team-socials-link:focus {
-   border-radius: 50px;
+   border-radius: 50%;
    background-color: var(--blue-color);
    color: var(--main-backround);
 }
@@ -482,7 +483,6 @@ img {
 .team-socials-icon {
    fill: currentColor;
 }
-
 
 /* ======================Clients================================ */
 
